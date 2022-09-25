@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Raleway:wght@200&display=swap');
+
+
+.component .basket-container {
+    padding: 1rem;
+    text-align: center;
+    margin: 2% 0 2% 14%;
+    width: 70%;
+    height: auto;
+    border-radius: 1rem;
+    font-family: 'Baloo 2', cursive;
+    border: 4px solid rgb(30, 144, 255, 0.1);
+  }
+
+  .basket-container h1 {
+    font-family: 'Fira Code', monospace;
+  }
+
+  .basketlist {
+    width: 90%;
+    padding: 1rem 2rem;
+    display: -webkit-box;
+  }
+  
+  .total h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: .5rem;
+    margin: 2rem 4rem;
+    background-color: rgb(30, 144, 255, 0.3);
+    border: 3px solid transparent;
+    border-radius: 5px;
+    width: 30%;
+    min-width: 12rem;
+  }
+
+  .name h1 {
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    width: 38rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .element-specify{
+    display: flex;
+    min-width: 25rem;
+  }
+
+  .button-amount {
+    width: 8rem;
+    margin: 0 3rem;
+  }
+
+  .price h1 {
+    width: 8rem;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+
+  .button-amount button{
+    margin: 1rem .6rem;
+    padding: 0 0 0rem 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(30, 144, 255, 0.4);
+    cursor: pointer;
+    color: white;
+    border-radius: .3rem;
+  }
+  
+  .button-amount button:hover {
+    background-color: rgb(30, 144, 255, 0.8);
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .component .basket-container {
+        padding: 1rem;
+        margin: 2% 15%;
+    }
+    
+    .basketlist {
+      display: block;
+      width: 100%;
+    }
+
+    .name h1 {
+        margin: 1rem 0;
+        width: 100%;
+      }
+  }
+
+
+

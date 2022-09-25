@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+.segment {
+    margin: 1rem 5% 5rem 5%;
+    border: 2px solid rgb(95, 158, 160, 0.5);
+    border-radius: 20px;
+    display: flex;
+    width: 90%;
+}
+
+.column-title {
+    align-self: flex-start !important;
+    width: 60%;
+    padding: 20px 20px 20px 60px;
+    text-align: left;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+p.label {
+  font-size: 22px;
+  background-color: cadetblue;
+  color: white;
+  width: 10rem;
+  text-align: center;
+  border: 5px solid cadetblue;
+  border-radius: 20px;
+}
+
+.column h1 {
+  color: #333;
+ 
+}
+.column p {
+  font-size: 18px;
+  color: #777; 
+}
+
+.column-title h3.block-header {
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 3px;
+}
+
+p.description {
+    padding: 1rem;
+    background-color: rgb(95, 158, 160, 0.1);
+    border-radius: 2px;
+    width: 100%;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 1px;
+}
+
+button.basket-icon {
+    background-color: #ff3e6c;
+    border: px solid #ff3e6c;
+    color: #fff;
+    font-size: 22px;
+    height: 4rem;
+    width: 30%;
+  }
+  
+  button.basket-icon:hover {
+    background-color: #ff3e6c;
+    border: 1px solid #ff3e6c;
+    color: #fff;
+    font-size: 32px;
+  }
