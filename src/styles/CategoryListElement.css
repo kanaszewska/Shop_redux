@@ -1,0 +1,16 @@
+.list-element li {
+    width: 20vw;
+    background-color: rgb(30, 144, 255, 1);
+    color: white;
+    padding: 0 5% 0 5%;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+  }
+  
+  li:hover {
+    background-color: rgb(21, 104, 187);
+    font-weight: bolder;
+    color: black;
+  }

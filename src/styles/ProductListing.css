@@ -1,4 +1,3 @@
-
 .container {
     margin: 1rem 5rem;
     position: relative;
@@ -7,33 +6,10 @@
     justify-content: center;
   }
 
-  .category-list {
+.category-list {
     margin: -1rem 0 0 0 ;
     width: 100%;
     height: 2rem;
-}
-
-.category-list ul {
-  padding: 0 .7rem 0 0.5rem;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.category-list li {
-  background-color: rgb(30, 144, 255, 1);
-  color: white;
-  padding: 0 5% 0 5%;
-  text-transform: uppercase;
-  list-style: none;
-  font-weight: bold;
-  letter-spacing: 2.5px;
-}
-
-li:hover {
-  background-color: rgb(21, 104, 187);
-  font-weight: bolder;
-  color: black;
 }
 
 .arrow-up {
