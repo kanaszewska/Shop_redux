@@ -1,8 +1,10 @@
 .list-element li {
     width: 20vw;
-    background-color: rgb(30, 144, 255, 1);
+    height: 2.5rem;
+    background-color:  rgba(0, 0, 0, 0.888);
+    border: 2px solid white;
     color: white;
-    padding: 0 5% 0 5%;
+    padding: 2% 5% 0 5%;
     text-transform: uppercase;
     list-style: none;
     font-weight: bold;
