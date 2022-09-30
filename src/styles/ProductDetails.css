@@ -4,6 +4,7 @@
 .segment {
     margin: 1rem 5% 5rem 5%;
     border: 2px solid rgb(95, 158, 160, 0.5);
+    box-shadow: 2px 3px 4px 2px rgb(95, 158, 160, 0.5);
     border-radius: 20px;
     display: flex;
     width: 90%;
@@ -69,4 +70,5 @@ button.basket-icon {
     border: 1px solid #ff3e6c;
     color: #fff;
     font-size: 32px;
+    scale: 110%;
   }
