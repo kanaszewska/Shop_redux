@@ -19,6 +19,10 @@ const Basket = () => {
         history.push("/");
   };
 
+  const handleOnClickPayment = () => {
+    history.push("/payment");
+};
+
   const handleCost = () => {
     let cost = 0;
           items.map((item) => (cost += item.price * item.amount));
@@ -31,7 +35,7 @@ const Basket = () => {
     });
 
   const basketList = items.map((item) => {
-      let { amount, id, title, price} = item;
+      let { amount, id, image, title, price} = item;
 
      
   const handleRemove = () => {
@@ -50,16 +54,26 @@ const Basket = () => {
           <div className="basketlist">
             <div key={id}>
             </div>
+            <div className="picture">
+              <p>Picture</p>
+              <img className="image" src={image} alt="/" />
+            </div>
             <div className="name">
+              <p>Name</p>
               <h1>{title}</h1>
             </div>
             <div className='element-specify'>
+            <div className='price'>
+                <p>Price</p>
+              <h1>$ {price}</h1>
+            </div>
             <div className='button-amount'>
               <button onClick={handleRemove}>-</button>
                 {amount}
               <button onClick={handleAdd}>+</button>
             </div>
             <div className='price'>
+              <p>Total price</p>
               <h1>$ {price * amount}</h1>
             </div>
             </div>
@@ -70,14 +84,20 @@ const Basket = () => {
   });
     return(
       <div className='component'>
-      
         <div className='basket-container'>
-        <h1>SHOPPING BASKET</h1>
-            {basketList}
+          <h1>SHOPPING BASKET</h1>
+            <div className='heading'>  
+            </div>
+            <div className='basketList'>
+               {basketList}
+            </div>
           <div className="total">
-          <h1>Total price $ {cost}</h1>
+            <h1>Total price $ {cost}</h1>
         </div>
       </div>
+        <div>
+            <button className='next-level' onClick={handleOnClickPayment}>delivery and payment</button>
+        </div>
             <button className='back' onClick={handleOnClick}><FaArrowLeft/>  Back</button>
         </div>
     )

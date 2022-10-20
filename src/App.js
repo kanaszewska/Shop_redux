@@ -5,6 +5,8 @@ import Basket from "./containers/Basket";
 import Header from "./containers/Header";
 import "./App.css";
 import ProductDetails from "./containers/ProductDetails";
+import Payment from "./containers/Payment";
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" exact component={ProductListing} />
           <Route path="/product/:productId" component={ProductDetails} />
           <Route path="/basket" component={Basket} /> 
+          <Route path="/payment" component={Payment}/>
           <Route>404 Not Found!</Route>
         </Switch>
       </Router>

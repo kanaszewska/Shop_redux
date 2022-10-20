@@ -54,6 +54,7 @@ p.description {
     width: 100%;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 1px;
+    font-size: 1.4rem;
 }
 
 button.basket-icon {

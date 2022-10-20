@@ -1,0 +1,76 @@
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.payment-delivery {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 139, 0.05);
+}
+
+.delivery,
+.payment {
+    height: auto;
+    width: 40%;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 139, 0.1);
+    margin: 2rem 1%;
+    padding: 1rem;
+    color: black;
+}
+
+.delivery p,
+.payment p {
+    color: black;
+}
+
+.delivery .check-delivery
+.payment .check-payment {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: .5rem;
+    padding: 1rem 4rem 1rem 0;
+    font-size: 1.3rem;
+}
+
+label {
+    display: flex;
+    padding: 1rem;
+}
+
+label p {
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.basket-short {
+    min-height: 40rem;
+    height: auto;
+    width: 82%;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 139, 0.1);
+    margin: 1rem 1% 4rem 1%;
+    padding: 1rem 9rem;
+}
+
+.amount p {
+    font-size: 1.5rem;
+    padding: 1rem 7rem;
+    color: black;
+}
+
+p.error {
+    margin: 0;
+    padding: 0;
+    color: red;
+
+}
