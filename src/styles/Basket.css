@@ -1,7 +1,7 @@
-.component .basket-container { 
+.component .basket-container {
     padding: 1rem;
     text-align: center;
-    margin: 2% 15%;
+    margin: 2% 0 2% 14%;
     width: 70%;
     height: auto;
     border-radius: 1rem;
@@ -13,11 +13,11 @@
   }
 
   .basketlist {
+    width: 95%;
     padding: 1rem 2rem;
+    display: -webkit-box;
     border-bottom: 3px solid rgb(0, 0, 139, 0.2);
     margin: 1rem;
-    display: block;
-    width: 100%;
   }
 
   p {
@@ -42,7 +42,7 @@
     text-align: left;
     font-size: 1.3rem;
     margin: 1rem 0;
-    width: 100%;
+    width: 38rem;
   }
 
   .picture img {
@@ -103,6 +103,25 @@
   .button-amount button:hover {
     background-color: rgb(30, 144, 255, 0.8);
     color: white;
+  }
+  
+  @media only screen and (max-width: 1600px) {
+    .component .basket-container {
+        padding: 1rem;
+        margin: 2% 19%;
+    }
+    
+    .basketlist {
+      display: block;
+      width: auto;
+      margin: 1rem;
+    }
+
+    .name h1 {
+        margin: 1rem 0;
+        text-align: center;
+        width: 97%;  
+      }
   }
 
 

@@ -1,7 +1,7 @@
 {
   "name": "sklep1",
   "version": "0.1.0",
-  "homepage": "https://kanaszewska.github.io/Shop_redux/",
+  "homepage": "https://kanaszewska.github.io/Shop_redux",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
