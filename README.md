@@ -1,13 +1,15 @@
 # This web page is hosted here!
-
+https://kanaszewska.github.io/Shop_redux/
 
 
 # Technologies Used
-HTML5
-
-CSS3
-
-JavaScript
+* CSS
+* HTML5
+* JavaScript
+* React
+* React Router DOM
+* Redux
+* Axios
 
 
 
