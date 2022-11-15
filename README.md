@@ -3,12 +3,11 @@ https://kanaszewska.github.io/Shop_redux/
 
 
 ## Technologies Used
-HTML5
+#739 HTML5
 CSS3
 JavaScript
 Bootstrap v5.1
 Axios
-
 
 ### Screenshots
 
