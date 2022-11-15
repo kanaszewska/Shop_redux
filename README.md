@@ -4,15 +4,14 @@ https://kanaszewska.github.io/Shop_redux/
 
 ## Technologies Used
 HTML5
+
 CSS3
+
 JavaScript
+
 Bootstrap v5.1
+
 Axios
-at Christmas – w święta 
-
-at Easter – w Wielkanoc 
-
-at the weekend – w weekend 
 
 ### Screenshots
 
