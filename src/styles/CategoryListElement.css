@@ -16,3 +16,9 @@
     font-weight: bolder;
     color: black;
   }
+
+  @media only screen and (max-width: 990px) {
+    .list-element li {
+      height: 3.5rem;
+    }
+  }

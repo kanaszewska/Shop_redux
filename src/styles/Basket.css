@@ -1,8 +1,8 @@
 .component .basket-container {
     padding: 1rem;
     text-align: center;
-    margin: 2% 0 2% 14%;
-    width: 70%;
+    margin: 2% 0 2% 5%;
+    width: 90%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 3px 4px 4px 3px rgb(0, 0, 139, 0.2);
@@ -35,7 +35,6 @@
     padding: .5rem;
     margin: 2rem 0rem;
     min-width: 12rem;
-
   }
 
   .name h1 {
@@ -79,7 +78,7 @@
     border: 4px solid black;
     background-color: black;
     color: white;
-    margin-left: 75%;
+    margin-left: 65%;
     border-radius: 2px;
   }
 
@@ -105,10 +104,10 @@
     color: white;
   }
   
-  @media only screen and (max-width: 1600px) {
+  @media only screen and (max-width: 1150px) {
     .component .basket-container {
         padding: 1rem;
-        margin: 2% 19%;
+        margin: 2% 5%;
     }
     
     .basketlist {
@@ -121,6 +120,10 @@
         margin: 1rem 0;
         text-align: center;
         width: 97%;  
+      }
+
+    button.next-level {
+      margin-left: 15%;
       }
   }
 
