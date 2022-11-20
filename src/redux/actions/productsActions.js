@@ -28,7 +28,6 @@ export const setItem = (item) => {
 }
 
 export const removeSelectedItem = (item) => {
-  console.log('removeSelectedItem', item)
   return {
     type: ActionTypes.REMOVE_SELECTED_ITEM,
     payload: item,
@@ -36,14 +35,12 @@ export const removeSelectedItem = (item) => {
 }
 
 export const addAmountItem = (item) => {
-  console.log('productActions addAmountItem', item)
   return {
     type: ActionTypes.ADD_AMOUNT_ITEM,
     payload: item,
   }
 }
 export const removeAmountItem = (item) => {
-  console.log('productActions removeAmountItem', item)
   return {
     type: ActionTypes.REMOVE_AMOUNT_ITEM,
     payload: item,

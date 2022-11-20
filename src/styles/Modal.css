@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.modal-content {
+    width: 500px;
+    background-color: white;
+    color: black;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 10px;
+    color: black;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.modalbasket-title p{
+    color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+.modalbasket-title p span {
+    margin-right: 5px;
+}
+
+.modal-title p {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 1px;
+    color: green;
+    font-size: 1.5rem;
+}
+
+.modal-title p span {
+    margin-right: 5px;
+}
+
+.modal-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.modal-body p {
+    font-size: 1.7rem;
+    color: black;
+}
+
+.modal-button {
+    margin: 0;
+    font-weight: bold;
+    background-color: black;
+    padding: .2rem;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 5rem;
+    height: auto;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.modal-button:hover {
+    background-color: black;
+    scale: 108%;
+}

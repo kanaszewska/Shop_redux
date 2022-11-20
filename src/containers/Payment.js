@@ -1,61 +1,71 @@
-import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { ModalOrder } from "./Modal";
 
-import '../styles/Payment.css'
+import "../styles/Payment.css";
 
 const Payment = () => {
   const initialValue = {
     acceptDelivery: false,
     acceptPayment: false,
-  }
+  };
 
-  const [cost, setCost] = useState(0)
-  const [formValues, setFormValues] = useState(initialValue)
-  const [formErrors, setFormErrors] = useState({})
-  const [isSubmit, setIsSubmit] = useState(false)
+  const [cost, setCost] = useState(0);
+  const [formValues, setFormValues] = useState(initialValue);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [show, setShow] = useState(false);
+
   let items = useSelector((state) => {
-    return state.products.items
-  })
+    return state.products.items;
+  });
+  const history = useHistory();
+
+  const handleOnClick = () => {
+    setShow(false);
+    history.push("/Shop_redux");
+  };
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormValues({ ...formValues, [name]: value })
-  }
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const handleOnSubmit = (e) => {
-    e.preventDefault()
-    setFormErrors(validate(formValues))
-    setIsSubmit(true)
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+    setShow(true);
 
-    if (Object.keys(validate(formValues)).length === 0 && isSubmit) {
-      alert('Order accepted')
-    }
-    return
-  }
+    if (Object.keys(validate(formValues)).length === 0 && isSubmit) return;
+  };
 
   const validate = (values) => {
-    const errors = {}
+    const errors = {};
     if (!values.acceptDelivery) {
-      errors.acceptDelivery = 'Choose delivery option'
+      errors.acceptDelivery = "Choose delivery option";
+      setShow(false);
     }
     if (!values.acceptPayment) {
-      errors.acceptPayment = 'Choose payment option'
+      errors.acceptPayment = "Choose payment option";
+      setShow(false);
     }
-    return errors
-  }
+    return errors;
+  };
 
   const handleCost = () => {
-    let cost = 0
-    items.map((item) => (cost += item.price * item.amount))
-    setCost(cost)
-  }
+    let cost = 0;
+    items.map((item) => (cost += item.price * item.amount));
+    setCost(cost);
+  };
 
   useEffect(() => {
-    handleCost()
-  })
+    handleCost();
+  });
 
   const basketList = items.map((item) => {
-    let { amount, id, image, title, price } = item
+    let { amount, id, image, title, price } = item;
 
     return (
       <div className="main">
@@ -77,8 +87,8 @@ const Payment = () => {
           </div>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <div className="main">
@@ -163,9 +173,12 @@ const Payment = () => {
         <button className="next-level" type="submit" onClick={handleOnSubmit}>
           PLACE ORDER
         </button>
+        {show ? (
+          <ModalOrder show={show} onClose={handleOnClick}></ModalOrder>
+        ) : null}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Payment
+export default Payment;

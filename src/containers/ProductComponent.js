@@ -1,15 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
-import "../styles/ProductComponent.css";
+import '../styles/ProductComponent.css'
 
 const ProductComponent = () => {
-  const products = useSelector((state) => state.allProducts.products);
-  console.log("products", products);
+  const products = useSelector((state) => state.allProducts.products)
 
   const renderList = products.map((product) => {
-    const { id, title, image, price, category } = product;
+    const { id, title, image, price, category } = product
     return (
       <div className="column" key={id}>
         <Link to={`/product/${id}`}>
@@ -25,9 +24,9 @@ const ProductComponent = () => {
           </div>
         </Link>
       </div>
-    );
-  });
-  return <>{renderList}</>;
-};
+    )
+  })
+  return <>{renderList}</>
+}
 
-export default ProductComponent;
+export default ProductComponent

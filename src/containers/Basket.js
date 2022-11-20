@@ -6,24 +6,35 @@ import {
   addAmountItem,
   removeAmountItem,
 } from '../redux/actions/productsActions'
+import { ModalBasket } from './Modal'
 
 import '../styles/Basket.css'
 
 const Basket = () => {
+  const [show, setShow] = useState(false)
+  let [cost, setCost] = useState(0)
+
   let items = useSelector((state) => {
     return state.products.items
   })
-  let [cost, setCost] = useState(0)
+
 
   const history = useHistory()
   const dispatch = useDispatch()
 
-  const handleOnClick = () => {
+  const handleOnClickBack = () => {
     history.push('/Shop_redux')
   }
 
   const handleOnClickPayment = () => {
+    if (cost !== 0) {
     history.push('/payment')
+    } else {
+      setShow(true)
+    }
+  }
+  const handleOnClick = () => {
+    setShow(false)
   }
 
   const handleCost = () => {
@@ -45,7 +56,6 @@ const Basket = () => {
 
     const handleAdd = () => {
       dispatch(addAmountItem(item))
-      console.log('click++++', amount)
     }
 
     return (
@@ -93,8 +103,12 @@ const Basket = () => {
         <button className="next-level" onClick={handleOnClickPayment}>
           delivery and payment
         </button>
+        {show ? (
+          <ModalBasket show={show} onClose={handleOnClick}>
+          </ModalBasket>
+        ) : null}
       </div>
-      <button className="back" onClick={handleOnClick}>
+      <button className="back" onClick={handleOnClickBack}>
         <FaArrowLeft /> Back
       </button>
     </div>
