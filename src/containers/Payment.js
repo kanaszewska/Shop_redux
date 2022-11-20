@@ -36,9 +36,11 @@ const Payment = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    setShow(true);
+    setShow(true)
+   
 
-    if (Object.keys(validate(formValues)).length === 0 && isSubmit) return;
+    if (Object.keys(validate(formValues)).length === 0 && isSubmit)
+    return;
   };
 
   const validate = (values) => {
