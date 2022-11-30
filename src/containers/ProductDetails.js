@@ -1,31 +1,31 @@
-import React from 'react'
-import { useParams, useHistory } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import { setItem } from '../redux/actions/productsActions'
-import { FaArrowLeft } from 'react-icons/fa'
+import React from "react";
+import { useParams, useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setItem } from "../redux/actions/productsActions";
+import { FaArrowLeft } from "react-icons/fa";
 
-import '../styles/ProductDetails.css'
+import "../styles/ProductDetails.css";
 
 const ProductDetails = () => {
-  const { productId } = useParams()
+  const { productId } = useParams();
 
   let product = useSelector((state) => {
     return state.allProducts.products.filter((product) => {
-      return product.id === parseInt(productId)
-    })[0]
-  })
+      return product.id === parseInt(productId);
+    })[0];
+  });
 
-  const { image, title, price, category, description } = product
-  const dispatch = useDispatch()
-  const history = useHistory()
+  const { image, title, price, category, description } = product;
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleOnClick = () => {
-    history.push('/Shop_redux')
-  }
+    history.push("/Shop_redux");
+  };
 
   const handleOnClickBasket = () => {
-    dispatch(setItem(product))
-  }
+    dispatch(setItem(product));
+  };
 
   return (
     <div className="product-container">
@@ -54,7 +54,7 @@ const ProductDetails = () => {
         <FaArrowLeft /> Back
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetails
+export default ProductDetails;

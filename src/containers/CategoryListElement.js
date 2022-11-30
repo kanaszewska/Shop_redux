@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import '../styles/CategoryListElement.css'
+import "../styles/CategoryListElement.css";
 
 const CategoryListElement = ({ handleSearch, element }) => {
-  const { id } = element
+  const { id } = element;
 
   return (
     <div className="list-element">
@@ -11,7 +11,7 @@ const CategoryListElement = ({ handleSearch, element }) => {
         {element}
       </li>
     </div>
-  )
-}
+  );
+};
 
-export default CategoryListElement
+export default CategoryListElement;

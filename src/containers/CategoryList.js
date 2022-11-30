@@ -1,39 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-import { useDispatch } from 'react-redux'
-import { setProducts } from '../redux/actions/productsActions'
-import CategoryListElement from './CategoryListElement'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { setProducts } from "../redux/actions/productsActions";
+import CategoryListElement from "./CategoryListElement";
 
-import '../styles/CategoryList.css'
+import "../styles/CategoryList.css";
 
 const CategoryList = () => {
-  const [data, setData] = useState(null)
-  const dispatch = useDispatch()
+  const [data, setData] = useState(null);
+  const dispatch = useDispatch();
 
   const fetchProductsByCategory = async (category) => {
     const response = await axios
       .get(`https://fakestoreapi.com/products/category/${category}`)
       .catch((err) => {
-        console.log('Err: ', err)
-      })
-    dispatch(setProducts(response.data))
-  }
+        console.log("Err: ", err);
+      });
+    dispatch(setProducts(response.data));
+  };
 
   let allCategories = () => {
-    fetch('https://fakestoreapi.com/products/categories')
+    fetch("https://fakestoreapi.com/products/categories")
       .then((res) => res.json())
       .then((json) => {
-        setData(json)
-      })
-  }
+        setData(json);
+      });
+  };
 
   useEffect(() => {
-    allCategories()
-  }, [])
+    allCategories();
+  }, []);
 
   const handleSearch = (categoryArg) => {
-    fetchProductsByCategory(categoryArg)
-  }
+    fetchProductsByCategory(categoryArg);
+  };
 
   return (
     <div className="main-list">
@@ -48,11 +48,7 @@ const CategoryList = () => {
           ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default CategoryList
-
-{
-  /* <li onClick={() => handleSearch(element)}>{element}</li> */
-}
+export default CategoryList;
