@@ -42,3 +42,9 @@ https://kanaszewska.github.io/Shop_redux/
 
 
 ![Bez nazwy4](https://user-images.githubusercontent.com/106904594/205339319-0aa0538b-6285-49ce-8c2b-966c7978a8d9.png)
+
+
+![zcz](https://user-images.githubusercontent.com/106904594/205341279-9f9ce375-5f30-4d2a-abd3-c56ffe0f744b.png)
+
+
+
