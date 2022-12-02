@@ -14,10 +14,12 @@ https://kanaszewska.github.io/Shop_redux/
 
 # Features
 * Responsive design
-* Scroll layout after use navigation
-* Animated texts, buttons and icons
-* Validated contact form
-* Sending email by my form
+* Going to subpages after using navigation
+* Filtering products by category
+* Subpage with details of each product
+* Adding products to the shopping cart
+* Choosing payment and delivery options
+* Animated texts, buttons and product icons
 * Modal windows
 * I used fonts from Google Fonts
 * I used icons from React Icons
