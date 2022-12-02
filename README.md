@@ -21,6 +21,7 @@ https://kanaszewska.github.io/Shop_redux/
 * Choosing payment and delivery options
 * Animated texts, buttons and product icons
 * Modal windows
+* Scrolling to the top of the page
 * I used fonts from Google Fonts
 * I used icons from React Icons
 
